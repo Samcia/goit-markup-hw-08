@@ -44,6 +44,12 @@
   list-style: none;
   cursor: pointer;
 
+  &__link {
+    &--active {
+      color: $logoColor;
+    }
+  }
+
   &__link a {
     text-decoration: none;
     color: $headersColor;
@@ -52,6 +58,12 @@
     line-height: 1.18;
     letter-spacing: 0.02em;
     transition-property: color;
+    &--active {
+      color: $logoColor;
+      &::after {
+        color: $logoColor;
+      }
+    }
 
     &:hover,
     &:focus {
@@ -79,13 +91,15 @@
   list-style: none;
   padding: 50px 10px 0 40px;
   gap: 16px;
-  color: $logoColor;
+
   font-size: 22px;
   font-weight: 500;
   cursor: pointer;
-  &__link {
+  &__link a {
     border-right: 1px solid $paragraphColor;
     padding-right: 16px;
+    text-decoration: none;
+    color: $logoColor;
 
     &.linkedin {
       border-right: none;

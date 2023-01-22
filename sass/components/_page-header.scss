@@ -118,6 +118,7 @@ img {
   border-style: none;
   background-color: $logo-footerColor;
   cursor: pointer;
+  margin-right: 10px;
 
   &:hover svg {
     fill: $logoColor;
