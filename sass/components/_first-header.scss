@@ -4,12 +4,21 @@
 }
 .background-img {
   background: $headersColor;
-  background-image: linear-gradient(#f38189e6 40%, #fce38ae8),
-    image-set(url("./images/Img15.jpg") 1x, url("./images/BGM2x.jpg") 2x);
-  background-image: linear-gradient(#f38189e6 40%, #fce38ae8),
-    -webkit-image-set(url("./images/Img15.jpg") 1x, url("./images/./images/BGM2x.jpg")
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      40%,
+      rgba(47, 48, 58, 0.4)
+    ),
+    image-set(url("../images/Img15.jpg") 1x, url("../images/BGM2x.jpg") 2x);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      40%,
+      rgba(47, 48, 58, 0.4)
+    ),
+    -webkit-image-set(url("../images/Img15.jpg") 1x, url("../images/BGM2x.jpg")
           2x);
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
   max-width: 1600px;
   margin: 0 auto;
@@ -53,16 +62,19 @@
 
 @media (min-width: 768px) {
   .background-img {
-    background: linear-gradient(
-        to right,
+    background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
+        40%,
         rgba(47, 48, 58, 0.4)
       ),
-      url("../images/BGTx2.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    max-width: 1600px;
+      image-set(url("../images/BGTx1.jpg") 1x, url("../images/BGTx2.jpg") 2x);
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        40%,
+        rgba(47, 48, 58, 0.4)
+      ),
+      -webkit-image-set(url("../images/BGTx1.jpg") 1x, url("../images/BGTx2.jpg")
+            2x);
   }
 }
 @media (min-width: 1200px) {
