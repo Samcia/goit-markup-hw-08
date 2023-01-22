@@ -1,0 +1,42 @@
+.customers {
+  list-style: none;
+  display: inline-flex;
+  gap: 30px;
+  align-items: center;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+  &__list {
+    border: 1px solid $social-itemsColor;
+    border-radius: 4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 210px;
+    height: 92px;
+    cursor: pointer;
+    fill: $social-itemsColor;
+
+    &:hover {
+      border: 1px solid $logoColor;
+      transition: $transition;
+
+      & svg {
+        fill: $logoColor;
+        transition: $transition;
+      }
+    }
+    &__svg {
+      fill: $social-itemsColor;
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .customers {
+    gap: 30px;
+    &__list {
+      width: 170px;
+    }
+  }
+}

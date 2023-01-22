@@ -1,0 +1,106 @@
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.possibilities-list {
+  flex-direction: column;
+  margin-bottom: 0;
+  &__item {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    text-align: center;
+    list-style: none;
+    margin: 0 15px;
+  }
+  &__div {
+    background-color: $team-sectionBackground;
+    border: 1px solid $team-sectionBackground;
+    border-radius: 4%;
+    margin-bottom: 30px;
+    width: calc(100% - 5px);
+    height: 120px;
+  }
+  &__svg {
+    align-items: center;
+    fill: $team-sectionBackground;
+    width: 70px;
+    height: 70px;
+    margin-top: 25px;
+  }
+  &__h3 {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.5;
+    text-decoration: none;
+    display: flex;
+    padding-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+  &__paragraph {
+    font-size: 14px;
+    text-decoration: none;
+    color: $paragraphColor;
+    display: flex;
+    text-align: left;
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  .possibilities-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+
+    &__item {
+      display: inline-flex;
+      text-decoration: none;
+      width: 100%;
+      margin: 0;
+      flex-basis: calc((100% - 30px) / 2);
+    }
+    &__div {
+      background-color: $team-sectionBackground;
+      border: 1px solid $team-sectionBackground;
+      border-radius: 4%;
+      margin-bottom: 30px;
+      height: 120px;
+      justify-content: Center;
+      align-items: Center;
+    }
+    &__svg {
+      align-items: center;
+      fill: $team-sectionBackground;
+      width: 70px;
+      height: 70px;
+      margin-top: 25px;
+    }
+    &__h3 {
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 1.5;
+      text-decoration: none;
+      padding-bottom: 10px;
+      text-align: left;
+      justify-content: flex-start;
+      display: flex;
+    }
+    &__paragraph {
+      font-size: 14px;
+      text-decoration: none;
+      color: $paragraphColor;
+      display: flex;
+      text-align: left;
+      margin-bottom: 30px;
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .possibilities-list {
+    flex-wrap: nowrap;
+  }
+}

@@ -1,0 +1,188 @@
+.footer {
+  background-color: $footerBackground;
+  text-decoration: none;
+  display: block;
+  align-items: center;
+  padding: 60px 0px;
+}
+.logo-footer {
+  color: $logo-footerColor;
+  text-decoration: none;
+  font-family: "Raleway";
+  align-items: center;
+  font-size: 24px;
+  justify-content: center;
+  display: flex;
+
+  &--studio {
+    color: $logoColor;
+  }
+}
+.footer-links {
+  list-style: none;
+  margin-top: 20px;
+
+  &__address {
+    color: $logo-footerColor;
+    cursor: pointer;
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+    display: block;
+  }
+  &__link {
+    color: $paragraphColor;
+    padding-top: 10px;
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    &:hover,
+    &:focus {
+      color: $logoColor;
+    }
+  }
+}
+.join-us {
+  flex-direction: column;
+  justify-content: center;
+  column-gap: 30px;
+  margin-top: 60px;
+
+  &__list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+  }
+
+  &__circle {
+    padding: 12px;
+    background-color: $social-itemsBackground;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-right: 10px;
+    fill: $logo-footerColor;
+
+    &:hover {
+      background-color: $logoColor;
+    }
+  }
+}
+.footer-h3 {
+  color: $logo-footerColor;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.sign-up {
+  flex-direction: column;
+  justify-content: center;
+  column-gap: 30px;
+  margin-top: 60px;
+  text-align: center;
+  display: flex;
+  flex-grow: 1;
+  &__form {
+    display: block;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__email {
+    background-color: $footerBackground;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 400;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    padding: 15px 16px;
+
+    flex-wrap: wrap;
+    width: calc(100% - 30px);
+    &:hover {
+      background-color: $footerBackground;
+    }
+  }
+}
+.footer-button {
+  padding: 12px 24px 12px 42px;
+  background-color: $logoColor;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  cursor: pointer;
+  color: $logo-footerColor;
+  font-weight: 700;
+  font-size: 16px;
+  fill: $logo-footerColor;
+  margin-top: 24px;
+}
+.footer-svg {
+  display: inline-flex;
+  justify-content: center;
+  align-items: Center;
+  text-align: center;
+  margin-left: 10px;
+  margin-bottom: -5px;
+}
+
+@media (min-width: 768px) {
+  .footer--style {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .join-us {
+    margin-top: 0;
+  }
+  .sign-up {
+    margin: 0 200px;
+    margin-top: 60px;
+    &__email {
+      max-width: calc(100% - 120px);
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .logo-footer {
+    justify-content: flex-start;
+  }
+  .footer-style {
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    text-align: left;
+  }
+  .join-us {
+    margin-top: 12px;
+    margin-left: 60px;
+  }
+  .sign-up {
+    margin: 0 0 0 70px;
+    text-align: left;
+
+    &__email {
+      width: 358px;
+    }
+  }
+  .footer-links {
+    &__link {
+      justify-content: flex-start;
+    }
+  }
+  .footer-h3 {
+    justify-content: flex-start;
+  }
+  .footer-button {
+    margin: 0 0 0 12px;
+  }
+}

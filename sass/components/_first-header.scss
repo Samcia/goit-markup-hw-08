@@ -1,0 +1,117 @@
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.background-img {
+  background: $headersColor;
+  background: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/BGM2x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 1600px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.first-header {
+  &__container {
+    display: block;
+  }
+  &__style {
+    text-align: center;
+    justify-content: center;
+    display: block;
+    font-size: 26px;
+    letter-spacing: 0.06em;
+    color: $logo-footerColor;
+    line-height: 1.36;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-weight: 900;
+    line-height: 1, 37;
+    padding-top: 80px;
+  }
+  &__button {
+    background-color: $logoColor;
+    color: $logo-footerColor;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 700;
+    line-height: 1.9;
+    display: block;
+    justify-content: center;
+    margin: 30px auto;
+    width: 200px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    padding: 10px 40px;
+  }
+}
+
+@media (min-width: 768px) {
+  .background-img {
+    background: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/BGTx2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    max-width: 1600px;
+  }
+}
+@media (min-width: 1200px) {
+  .background-img {
+    background: $headersColor;
+    background: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/Img15.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .first-header {
+    padding-top: 90px;
+    padding-bottom: 90px;
+
+    &__style {
+      text-align: center;
+      justify-content: center;
+      display: flex;
+      font-size: 44px;
+      letter-spacing: 0.06em;
+      color: $logo-footerColor;
+      line-height: 1.36;
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      font-weight: 900;
+      line-height: 1, 37;
+    }
+    &__button {
+      background-color: $logoColor;
+      color: $logo-footerColor;
+      text-align: center;
+      font-size: 16px;
+      cursor: pointer;
+      font-weight: 700;
+      line-height: 1.9;
+      display: flex;
+      justify-content: center;
+      margin: 30px auto;
+      width: 200px;
+      border: 1px solid rgba(0, 0, 0, 0.15);
+      border-radius: 4px;
+      padding: 10px 40px;
+    }
+  }
+}

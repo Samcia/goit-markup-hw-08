@@ -1,0 +1,93 @@
+.team-cards {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+
+  &__figure {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: $logo-footerColor;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 30px;
+  }
+  &__name {
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 30px 0px 10px 0;
+  }
+  &__workplace {
+    font-size: 14px;
+    font-weight: 400px;
+    text-decoration: none;
+    color: $paragraphColor;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  &--style {
+    margin-top: 16px;
+  }
+  &__list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    margin-bottom: 30px;
+  }
+  &__items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: $team-iconsColor;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+
+    &:hover {
+      background-color: $logoColor;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 44px;
+      height: 44px;
+      fill: $logo-footerColor;
+    }
+
+    &__svg {
+      fill: $team-iconsColor;
+      column-gap: 30px;
+      align-items: center;
+      cursor: pointer;
+      display: flex;
+    }
+  }
+}
+@media (min-width: 768px) {
+  .team-cards {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+  .team {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 1200px) {
+  .team {
+    flex-wrap: nowrap;
+  }
+}
